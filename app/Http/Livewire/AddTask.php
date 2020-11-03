@@ -20,5 +20,6 @@ class AddTask extends Component
 
         $this->title = "";
         $this->emit('taskAdded');
+        session()->flash('message','TASK WAS ADDED SUCCESSFULY');
     }
 }
